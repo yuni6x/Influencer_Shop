@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 nav {
     border-bottom: 1px solid black;
@@ -12,7 +15,7 @@ nav {
     align-items: center;
     height: 65px;
     padding: 0 120px;
-    font-family: 'Poppins', sans-serif;
+
 }
 .logo {
     /* border: 1px solid black; */
@@ -36,6 +39,38 @@ li a {
 li a:hover {
     font-weight: bold;
 }
+
+
+/* header */
+.header-wrapper {
+    display: flex;
+    border: 1px solid black;
+    margin: 30px 100px;
+    padding: 20px;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.header-content-title {
+    font-size: 22px;
+}
+.header-content-content{
+    margin: 15px auto;
+}
+.header-logo{
+    /* border: 1px solid red; */
+    position: relative;
+}
+.bg-header-img {
+    /* border: 1px solid yellow; */
+    position: absolute;
+    left: -35px;
+    top: 15px;
+    filter: drop-shadow(2px 2px 7px rgb(72, 72, 72));
+}
+
 
 
 /* ukuran mobile */
@@ -69,4 +104,27 @@ li a:hover {
         color: aliceblue;
         text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
     }
+
+    /* 2 */
+    .header-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 25px 50px;
+    }
+    .header-logo {
+        width: 75%;
+        margin-left: 12%;
+    }
+    .header-logo img {
+        width: 100%;
+    }
+    .header-content{
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    .header-content-title {
+        margin: 10px auto;
+    }
+
 }
